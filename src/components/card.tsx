@@ -2,7 +2,11 @@ import * as React from 'react'
 import { CardProps } from '../types/card-types'
 import SVG from '../components/svg'
 
-const Card: React.FunctionComponent<CardProps> = ({ workout, setSelected, isSelected }) => {
+const Card: React.FunctionComponent<CardProps> = ({
+  workout,
+  setSelected,
+  isSelected,
+}): JSX.Element => {
   return (
     <li
       className={`${isSelected ? 'selected ' : ''}card`}

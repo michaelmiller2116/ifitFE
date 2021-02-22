@@ -1,15 +1,15 @@
 .card {
-  cursor: pointer;
-  min-height: 200px;
-  background: #fff;
   aspect-ratio: 1 / 1;
-  box-sizing: border-box;
+  background: #fff;
   border-radius: 5px;
-  transition: 0.25s ease box-shadow;
+  box-shadow: 0 1px 2px 0 rgba(46, 49, 52, 0.4);
+  box-sizing: border-box;
+  cursor: pointer;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 1px 2px 0 rgba(46, 49, 52, 0.4);
+  min-height: 200px;
   text-align: unset;
+  transition: 0.25s ease box-shadow;
 
   &.selected {
     box-shadow: 0 7px 12px 0 rgba(46, 49, 52, 0.3);
@@ -18,23 +18,22 @@
   .card-image-container {
     position: relative;
     .card-overlay {
+      align-items: center;
+      background: rgba(0, 0, 0, 0.5);
+      border-top-right-radius: 5px;
+      color: #f1f1f1;
       display: flex;
       flex-direction: column;
-      justify-content: space-evenly;
-      align-items: center;
-      position: absolute;
-      top: 0;
-      right: 0;
-      background: rgb(0, 0, 0);
-      background: rgba(0, 0, 0, 0.5); /* Black see-through */
-      color: #f1f1f1;
-      width: 45%;
-      transition: 0.5s ease;
-      opacity: 1;
-      color: white;
       font-size: 20px;
-      text-align: center;
       height: 100%;
+      justify-content: space-evenly;
+      opacity: 1;
+      position: absolute;
+      right: 0;
+      text-align: center;
+      top: 0;
+      transition: 0.5s ease;
+      width: 45%;
 
       .card-overlay-workouts {
         font-size: 0.75rem;
@@ -42,25 +41,25 @@
     }
 
     .card-image {
-      display: block;
       border-top-left-radius: 5px;
       border-top-right-radius: 5px;
+      display: block;
       width: 100%;
     }
   }
 
   .card-text {
-    padding: 16px;
     height: 40%;
+    padding: 16px;
 
     .card-header {
-      display: flex;
       align-items: flex-start;
+      display: flex;
       justify-content: space-between;
 
       h5 {
-        margin: 0px;
         font-size: 0.75vw;
+        margin: 0px;
         width: 75%;
       }
 
@@ -75,13 +74,13 @@
       flex-direction: column;
 
       .card-body-stats {
-        width: 125px;
-        display: flex;
-        justify-content: space-between;
         align-items: center;
+        display: flex;
         font-size: 0.6vw;
-        margin-bottom: 0.75rem;
         font-weight: 600;
+        justify-content: space-between;
+        margin-bottom: 0.75rem;
+        width: 125px;
       }
 
       .card-body-details {

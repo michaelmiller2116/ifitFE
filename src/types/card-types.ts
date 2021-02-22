@@ -1,5 +1,5 @@
 import * as React from 'react'
-interface WorkoutProps {
+export type WorkoutType = {
   title: string
   hasDetails?: boolean
   isSeries?: boolean
@@ -13,7 +13,7 @@ interface WorkoutProps {
 }
 
 export interface CardProps {
-  workout: WorkoutProps
+  workout: WorkoutType
   setSelected: React.Dispatch<React.SetStateAction<string | undefined>>
   isSelected: boolean
 }
