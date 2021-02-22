@@ -2,7 +2,7 @@ import * as React from 'react'
 import Card from './card'
 import { workouts } from '../constants/constants-cards'
 
-const CardsList: React.FunctionComponent = () => {
+const CardsList: React.FunctionComponent = (): JSX.Element => {
   const [selected, setSelected] = React.useState<string>()
   return (
     <ul className="list-container">

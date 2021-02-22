@@ -1,3 +1,4 @@
+import * as React from 'react'
 interface WorkoutProps {
   title: string
   hasDetails?: boolean
@@ -13,6 +14,6 @@ interface WorkoutProps {
 
 export interface CardProps {
   workout: WorkoutProps
-  setSelected: Function
+  setSelected: React.Dispatch<React.SetStateAction<string | undefined>>
   isSelected: boolean
 }
